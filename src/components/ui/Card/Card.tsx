@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Beer } from 'types';
+import { Beer } from 'src/types';
 import styles from './Card.module.scss';
 
 const MAX_LENGTH_DESCRIPTION = 140;

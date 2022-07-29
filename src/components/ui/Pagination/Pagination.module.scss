@@ -1,0 +1,18 @@
+.container {
+    margin: 1rem;
+    * {
+        margin: 0.2rem;
+    }
+}
+.active {
+    color: #fff;
+    background-color: #838383;
+    border-color: #000;
+    border-width: 2px;
+}
+
+.disabled {
+    background-color: #ffffff;
+    color: rgb(201, 201, 201);
+    pointer-events: none;
+}

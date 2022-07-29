@@ -1,10 +1,10 @@
-import { GetServerSideProps } from 'next';
-import Image from 'next/image';
-import { Beer } from '../../types';
-
-import styles from 'styles/Beer.module.scss';
 import { useState } from 'react';
+import { GetServerSideProps } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import { Beer } from 'src/types';
+
+import styles from 'src/styles/Beer.module.scss';
 
 type BeerPageProps = {
     item: Beer;
@@ -12,10 +12,8 @@ type BeerPageProps = {
 
 const BeerPage = ({ item }: BeerPageProps) => {
     const [isLoading, setIsLoading] = useState(false);
-
     const onLoadingComplete = () => setIsLoading(true);
 
-    console.log(item);
     return (
         <div className={styles.container}>
             <main className={styles.main}>
