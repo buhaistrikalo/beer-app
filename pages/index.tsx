@@ -15,7 +15,7 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <a href="https://nextjs.org">
+                <a href="https://github.com/buhaistrikalo/beer-app">
                     <h1 className={styles.title}>
                         <span>Beer app</span>
                         <Image src="/github.svg" alt="Vercel Logo" width={46} height={46} />
