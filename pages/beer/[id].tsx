@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Beer } from 'src/types';
@@ -16,6 +17,11 @@ const BeerPage = ({ item }: BeerPageProps) => {
 
     return (
         <div className={styles.container}>
+              <Head>
+                <title>{item.name}</title>
+                <meta name="description" content={item.description} />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <main className={styles.main}>
                 <div className={styles.tagline}>{item.tagline}</div>
                 <div className={styles.product}>
