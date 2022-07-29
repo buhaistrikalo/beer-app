@@ -25,7 +25,7 @@
 
 .product {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
 }
@@ -35,9 +35,10 @@
 }
 
 .image {
-    overflow: hidden;
-    width: 250px;
-    margin: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
@@ -76,4 +77,16 @@
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .product {
+        flex-direction: row;
+    }
+    .image {
+        display: block;
+        overflow: hidden;
+        width: 250px;
+        margin: 2rem;
+    }
 }
