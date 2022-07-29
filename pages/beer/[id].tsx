@@ -31,8 +31,8 @@ const BeerPage = ({ item }: BeerPageProps) => {
                             onLoadingComplete={onLoadingComplete}
                             src={item.image_url}
                             alt={item.name}
-                            width={200}
-                            height={400}
+                            width={120}
+                            height={350}
                         />
                     </div>
                     <div className={styles.content}>
