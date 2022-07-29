@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import { Beer } from 'types';
 import SearchBar from './SearchBar';
+import Card from 'components/ui/Card';
+import styles from 'styles/Home.module.scss'
 
 const BeerBlock = () => {
     const [value, setValue] = React.useState('');
@@ -26,16 +28,15 @@ const BeerBlock = () => {
     return (
         <>
             <SearchBar onChange={handleChange} value={value} />
-
+<div className={styles.beers__container}>
             {!isLoading ? (
                 data?.map((beer) => (
-                    <Link key={beer.id} href={`/beer/${beer.id}`}>
-                        <div> {beer.name}</div>
-                    </Link>
+                    <Card key={beer.name} item={beer}/>
                 ))
             ) : (
                 <div>Loading...</div>
             )}
+            </div>
         </>
     );
 };

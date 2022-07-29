@@ -110,6 +110,12 @@
     margin-left: 0.5rem;
 }
 
+.beers__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media (max-width: 600px) {
     .grid {
         width: 100%;
