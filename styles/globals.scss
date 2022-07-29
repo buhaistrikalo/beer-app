@@ -26,6 +26,21 @@ input {
     max-width: 600px;
 }
 
+button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background: #f3f3f3;
+    color: #333;
+    cursor: pointer;
+
+    &:hover {
+        background: #e3e3e3;
+        color: #000;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;

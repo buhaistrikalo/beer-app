@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import SearchBar from './SearchBar';
 
@@ -11,6 +12,9 @@ const BeerBlock = () => {
     return (
         <>
             <SearchBar onChange={handleChange} value={value} />
+            <Link href="/beer/1" >
+                Beer #1
+            </Link>
         </>
     );
 };
